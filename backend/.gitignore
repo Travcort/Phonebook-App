@@ -2,3 +2,5 @@ node_modules
 
 # REST Client
 requests.rest
+
+.env

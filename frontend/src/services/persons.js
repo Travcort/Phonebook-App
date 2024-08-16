@@ -10,9 +10,6 @@ const getPersons = () => {
 const newPerson = (personObject) => {
     const request = axios
     .post(baseUrl, personObject) 
-    .catch(error => {
-        alert(`adding ${personObject.name} generated an error`)
-      })
     return request.then(response => response.data)
 }
 

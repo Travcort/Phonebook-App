@@ -82,6 +82,11 @@ const App = () => {
         setMessage(`Added ${personObject.name}`);
         timeout();
       })
+      .catch (error => {
+        setIsError(true);
+        setMessage(error.response.data.error);
+        timeout();
+      })
     }
     setNewName('');
     setNewNumber('');
